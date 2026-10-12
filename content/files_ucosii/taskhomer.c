@@ -8,7 +8,7 @@
 
 #include "..\inc\taskhomer.h"
 
-/* Prints "BON NADAL" and sleeps for x seconds */
+/* Prints "HOMER" and sleeps for x seconds */
 void TaskHomer(void* pdata)
 {
 	INT8U err;
