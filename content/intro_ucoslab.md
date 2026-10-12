@@ -11,7 +11,7 @@ Asimismo, es necesario conocer IDE de ECLIPSE de Intel_FPGA, donde desarrollarem
 
 Las prácticas de uCOSII están pensadas inicialmente para poder ser ejecutadas sobre una tarjeta DE1-SoC con un fichero .sopc que permita acceder a todos los recursos hardware de dicha tarjeta, es decir la FPGA no solo dispondrá de NIOSII como procesador sino que existirán el resto de periféricos asociados a drivers que permitan el acceso a los recursos como memoria (FLASH, DRAM,…), VGA, teclado, LCD, Ethernet, audio y resto de componentes de DE1-SoC.
 
-Sin embargo, también es posible ejecutar las prácticas en un entorno de simulación utilizando ModelSim, lo que permite desarrollar y probar el código sin necesidad de hardware físico. Esta flexibilidad facilita el aprendizaje y la experimentación con conceptos de sistemas operativos en tiempo real.
+
 
 ### Objetivos específicos
 
