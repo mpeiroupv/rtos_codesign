@@ -2,8 +2,8 @@
 
 
 //Text on VGA
-char texto_up[80] = 	"                        Understanding RTOS on VGA - CHS 2025/26                ";
-char texto_down[80] = 	"                      uCOS-II over NIOS-II, Cyclone V, CHS 2025/26             ";
+char texto_up[80] = 	"                        Understanding RTOS on VGA - CHS 2026/27                ";
+char texto_down[80] = 	"                      uCOS-II over NIOS-II, Cyclone V, CHS 2026/27             ";
 char blank[80]=         "                                                                               \0";
 
 //Global variable to write lines on VGA

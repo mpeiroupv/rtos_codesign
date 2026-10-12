@@ -1,7 +1,6 @@
 ---
 title: "7. Suspensión de Tareas y Reactivación"
 ---
-
 Una de las posibilidades de los RTOS es la suspensión de una tarea en ejecución y su recuperación mediante servicios del operativo.
 
 ### Implementación de TaskSW
@@ -21,6 +20,7 @@ Además, cuando el SW1 esté a 1 se recupera la tarea cuyo código se muestra en
 <br>
 
 ### Fichero TaskSW con las acciones de Suspensión y Recuperación
+
 ```c
 #include "..\inc\tasksw.h"
 
@@ -57,11 +57,11 @@ void TaskSW(void* pdata)
 				{
 					err=OSTaskResume((INT8U)item);
 					if (err!=OS_ERR_NONE){
-						OSSemPost(Semaphore);
+						OSSemPend(Semaphore);
 						alt_ucosii_check_return_code(err);
 						printf("Task%0d resumed\n",item);
 						OSSemPost(Semaphore);
-						
+					
 					}
 					break;
 				}
@@ -96,11 +96,13 @@ void TaskSW(void* pdata)
 	}
 }
 ```
+
 ### Borrado de tareas
 
 Añada la opción de borrado de tarea `OSTaskDel()` en caso de tener SW0 y SW1 a 1 ambos.
 
 **Preguntas de reflexión:**
+
 - ¿Cómo funcionan los servicios de suspensión y recuperación?, comente el funcionamiento.
 - ¿Pueden suspenderse tareas de prioridad superior a la tarea desde la que se lanza la suspensión?
 
