@@ -63,8 +63,6 @@ OSIntEnter(); /* Inform the OS that we are starting an ISR */
   {
     snprintf(vga_msg, sizeof(vga_msg), "%02d   KEY1 Interruption", line);
     Print_VGA(vga_msg, &line);
-    OSFlagPost(EventFlag,0x01,OS_FLAG_SET, &error);
-    alt_ucosii_check_return_code(error);
   }
   if (key_pressed & 0x4)   // KEY2 pressed
   {
