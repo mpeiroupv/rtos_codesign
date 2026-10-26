@@ -33,6 +33,10 @@ Para resolver el problema se aconseja:
 Para poder programar el código se debe estudiar:
 - El funcionamiento de un teclado PS2, incluyendo las teclas de expansión del teclado numérico
 - Los servicios asociados a colas de mensajes en UCOSII
+  
+>[!note] *Archivos para descargar:*
+>
+> - [RTOS_PS2_BMP.pdf](files_ucosii/RTOS_PS2_BMP.pdf) - Contiene explicaciones sobre el uso de teclado PS2 y ficheros de mapa de bits
 
 > **Nota**: Dedique unos minutos a pensar en cómo programar el ejercicio y discuta con el profesor la solución si está en el laboratorio.
 
