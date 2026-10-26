@@ -245,8 +245,8 @@ void TaskCode()
       CodeReceived=0;
       Count_keys_received=0;
 
-      OSFlagPost(EventFlag,0x02,OS_FLAG_SET, &error);
-      alt_ucosii_check_return_code(error);
+//      OSFlagPost(EventFlag,0x02,OS_FLAG_SET, &error);
+//      alt_ucosii_check_return_code(error);
 
     }
     else
@@ -266,8 +266,8 @@ void TaskCode()
         VGA_text(10+15,20,"   SORRY BABY   ",character_buffer);
         VGA_text(10+15,22,"   WRONG  CODE  ",character_buffer);
 
-        OSFlagPost(EventFlag,0x02,OS_FLAG_CLR, &error);
-        alt_ucosii_check_return_code(error);
+//        OSFlagPost(EventFlag,0x02,OS_FLAG_CLR, &error);
+//        alt_ucosii_check_return_code(error);
 
       }
     }
