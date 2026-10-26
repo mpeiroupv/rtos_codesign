@@ -72,7 +72,9 @@ typedef struct msg_data{
 Se debe activar la interrupción de PS2 en la función `Init_App()`:
 
 ```c
-alt_irq_register(PS2_KEY_IRQ, NULL, (alt_isr_func) keyboard_isr);
+// Enable interrupts from PS2 keyboard
+    *(keyboard_ptr+1) =0x01; //enable read interrupts on PS2 controller (RE bit)
+    alt_irq_register(PS2_KEY_IRQ, NULL, keyboard_isr);
 ```
 
 #### Productor de elementos de cola (ISR)
